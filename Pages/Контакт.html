@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://kit.fontawesome.com/3c891eeb19.js"crossorigin="anonymous"></script>
+    <title>Контакт</title>
+</head>
+<body>
+    <div class="w-full flex  justify-start flex-col  bg-cover bg-center py-4 px-2 h-[48rem] sm:h-[50rem] md:h-[42rem] lg:h-[45rem]  lg:h-[30rem] " style="background-image: url('../Images/luxury-hallway.png');">
+        <div class="w-full font-isabel flex flex-row justify-between items-start py-10 px-5 h-[8rem] sm:h-[5rem] md:h-[5rem] sm:py:1 bg-headerBG rounded-md">
+            <!-- Hamburger Menu -->
+            <div class="navigation w-1/12 z-[10]">
+                <div class="hamburger w-12 sm:w-8 h-auto relative top-[-0.5rem] sm:top-[-2.5rem] md:top-[-2.5rem]">
+                    <input id="toggle-menu" type="checkbox" class="toggle-menu opacity-0 ">
+                    <label for="toggle-menu">
+                        <span class="line-1  block h-1 bg-lpmgold mb-2 rounded-md" ></span>
+                        <span class="line-2  block h-1 bg-lpmgold mb-2 rounded-md" ></span>
+                        <span class="line-3  block h-1 bg-lpmgold rounded-md"></span>
+                    </label>
+                </div>
+                <ul class="main-menu flex flex-col justify-center rounded-lg items-center py-10 mt-10 bg-white w-40 translate-x-[-400px] transition duration-300 ease-out">
+                    <li class="mb-8"><a href="../Pages/За_Нас.html" class="text-lpmgold text-xl font-semibold">За Нас</a></li>
+                    <li class="mb-8"><a href="../Pages/Услуги.html" class="text-lpmgold text-xl font-semibold">Услуги</a></li>
+                    <li class="mb-8"><a href="../Pages/Проекти.html" class="text-lpmgold text-xl font-semibold ">Проекти</a></li>
+                    <li class="mb-8"><a href="../Pages/Кариери.html" class="text-lpmgold text-xl font-semibold ">Кариери</a></li>
+                    <li class="mb-8"><a href="../Pages/Контакт.html" class="text-lpmgold text-xl font-semibold ">Контакт</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="header-logo  flex flex-col justify-start items-start">
+                <a href="index-bg.html" class="block w-[250px] sm:w-[150px] md:w-[150px] relative top-[-3.5rem] sm:left-[1.4rem] md:left-[1.5rem]"><img src="../Images/V1n.png" alt="footer.logo"></a>
+            </div>
+            <!--Language Menu -->
+            <div class="phone-button-container ">
+                <a href="tel:+359896887798" class="phone-button inline-block px-3 py-3 bg-lpmgold text-white text-base sm:text-xs md:text-xs  sm:relative  sm:top-[-20px] sm:left-[15px] md:relative md:top-[-20px] md:left-[15px] sm:font-bold  hover:bg-bookBtn rounded ">Свържете се с нас!</a>
+            </div>
+        </div>
+        <div class="contact-form-container font-isabel flex flex-col justify-start items-center  rounded-md p-6 mt-6">
+            <h1 class="text-3xl font-bold text-center text-lpmgold text-[28px] mb-4">Изпратете запитване</h1>
+            <form action="https://formspree.io/f/mwkjqjyr" method="POST" class=" sm:w-3/4 md:w-[25rem] lg:w-[30rem] xl:w-[35rem] flex flex-col">
+              <div class="form-row mb-4">
+                <label for="name" class="block text-lpmgold text-xl font-bold mb-2">Име</label>
+                <input type="text" id="name" name="name" required class="block w-full border-2 border-gray-300 rounded-md py-2 px-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lpmgold focus:border-transparent">
+              </div>
+              <div class="form-row mb-4">
+                <label for="email" class="block text-lpmgold text-xl font-bold mb-2">Електронна поща</label>
+                <input type="email" id="email" name="email" required class="block w-full border-2 border-gray-300 rounded-md py-2 px-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lpmgold focus:border-transparent">
+              </div>
+              <div class="form-row mb-4">
+                <label for="phone" class="block text-lpmgold text-xl font-bold mb-2">Телефон</label>
+                <input type="tel" id="phone" name="phone" class="block w-full border-2 border-gray-300 rounded-md py-2 px-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lpmgold focus:border-transparent">
+              </div>
+              <div class="form-row mb-4">
+                <label for="message" class="block text-lpmgold text-xl font-bold mb-2">Съобщение</label>
+                <textarea id="message" name="message" required class="block w-full border-2 border-gray-300 rounded-md py-2 px-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lpmgold focus:border-transparent"></textarea>
+              </div>
+              <button type="submit" class="bg-lpmgold text-white py-2 px-4 rounded-md hover:bg-yellow-400 transition duration-300">Изпрати</button>
+            </form>
+          </div>
+        </div>
+    <footer class=" flex flex-col justify-between items-center bg-black w-full px-2 py-4">
+        <div class="footer-menu  w-1/2 flex flex-col justify-center items-start hidden">
+            <div class="footer-a-p text-lpmgold flex flex-col leading-6 relative left-10 hidden">
+                <a class="text-xl mb-2 sm:text-base md:text-base" href="../Pages/За_Нас.html">За Нас</a>
+                <a class="text-xl mb-2 sm:text-base md:text-base" href="../Pages/Услуги.html">Услуги</a>
+                <a class="text-xl mb-2 sm:text-base md:text-base" href="../Pages/Проекти.html">Проекти</a>
+                <a class="text-xl mb-2 sm:text-base md:text-base" href="../Pages/Кариери.html">Кариери</a>
+                <a class="text-xl mb-8 sm:text-base md:text-base" href="../Pages/Контакт.html">Контакт</a>
+            </div>
+        </div>
+        <div class="footer-contact font-isabel flex flex-col text-xl sm:text-base md:text-base">
+            <a href="index-bg.html"><img src="../Images/V1n.png" alt="footer.logo" class="sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[200px]"></a>
+            <div class="footer-number text-xl text-lpmgold sm:text-base md:text-base">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:">+359 89 688 7798</a>
+            </div>
+            <div class="footer-email text-lpmgold flex justify-between items-center pr-24 ">
+                <i class="fa-solid fa-envelope mt-1"></i>
+                <a href="mailto:lpmgroupbg@gmail.com">Е-Поща</a>
+            </div>
+            <div class="footer-social text-lpmgold flex justify-between ">
+                <a href="https://www.facebook.com/LPMGROUP2020" target="_blank"><i class="fa-brands fa-facebook sm:mr-3 md:mr-3 "></i></a>
+                <a href="https://www.instagram.com/lpmgroup2020/" target="_blank"><i class="fa-brands fa-instagram pr-36"></i></a>
+            </div>
+        </div>
+        <p class="text-lpmgold  text-center self-center font-isabel self-end mt-2 text-sm sm:text-xs md:text-xs w-fit ">All rights reserved LPM GROUP Ltd. 2023. Website by NIKLY Media.</p>
+    </footer>
+    <script src="../app.js"></script>
+    
+</body>
+</html>
